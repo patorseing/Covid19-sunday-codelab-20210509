@@ -9,7 +9,7 @@ exports.covid19 = functions.pubsub
   .schedule("* * * * *")
   .timeZone("Asia/Bangkok")
   .onRun(async (context) => {
-exports.covid19 = functions.https.onRequest(async (data, context) => {
+// exports.covid19 = functions.https.onRequest(async (data, context) => {
   const response = await axios.get("https://covid19.ddc.moph.go.th/th");
   const html = response.data;
   const $ = cheerio.load(html);
