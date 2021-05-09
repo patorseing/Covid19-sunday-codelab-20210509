@@ -37,7 +37,7 @@ exports.covid19 = functions.https.onRequest(async (data, context) => {
   return null;
 });
 
-const TOKEN="RKinPHsxa8FQFRWDLvT3h46SS4824s3xBz8NdKS7b1j9fIxvo8eh3ssj/qDWbu8P/MoUrD27WQ8COhaQXZFwXxMVGe1c0acdK5OVlwL/N2MBOKIhCAbCqZW2QPr5TIn1mUG1Ql1rnXQCAby/eQtq6AdB04t89/1O/w1cDnyilFU="
+const TOKEN=""
 
 const broadcast = (current) => {
   const currents = current.split("|");
